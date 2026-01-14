@@ -189,6 +189,61 @@ a {
   color: var(--muted);
 }
 
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--orange);
+  margin: 0;
+}
+
+.card-header h3 {
+  margin-top: 8px;
+}
+
+.card-header p {
+  margin-top: 8px;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.card-list li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.card-list li::before {
+  content: "•";
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.card-link {
+  font-weight: 600;
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
